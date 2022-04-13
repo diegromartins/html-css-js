@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mídias em HTML5</title>
+  </head>
+
+  <body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+      Tente abrir esse site em vários dispositivos diferentes ou simplesmente
+      aumente e diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+      <source
+        media="(max-width: 750px)"
+        srcset="images/foto-p.png"
+        type="image/png"
+      />
+      <source
+        media="(max-width: 1050px)"
+        srcset="images/foto-m.png"
+        type="image/png"
+      />
+      <img src="images/foto-g.png" alt="Imagem flexível" />
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <div class="media">
+      <audio controls preload="metadata">
+        <source
+          src="media/And Awaken - Stings - Kevin MacLeod.mp3"
+          type="audio/mpeg"
+        />
+        <source
+          src="media/And Awaken - Stings - Kevin MacLeod.ogg"
+          type="audio/ogg"
+        />
+        <source
+          src="media/And Awaken - Stings - Kevin MacLeod.wav"
+          type="audio/wav"
+        />
+        <p>
+          Infelizmente seu navegador não consegue reproduzir áudio.
+          <a href="media/And Awaken - Stings - Kevin MacLeod.mp3"
+            >Clique aqui para baixar o arquivo Mp3</a
+          >
+        </p>
+      </audio>
+
+      <p class="audiolic">
+        <!-- Direitos de Uso -->
+        And Awaken - Stings de Kevin MacLeod é licenciada de acordo com a
+        licença Atribuição 4.0 da Creative Commons.
+        https://creativecommons.org/licenses/by/4.0/ Fonte:
+        http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100331
+        Artista: http://incompetech.com/
+      </p>
+      <a
+        href="media/And Awaken - Stings - Kevin MacLeod.mp3"
+        type="audio/mpeg"
+        download=""
+        >Clique aqui para baixar o arquivo Mp3</a
+      >
+    </div>
+  </body>
+</html>

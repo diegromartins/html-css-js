@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  background-color: black;
+}
+
+.box {
+  max-width: 500px;
+  margin: 1rem auto 0;
+  border: 1px solid white;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 1rem;
+  padding: 0.5rem;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.title h1 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.videos {
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.video {
+  margin: 1rem;
+  padding: 0.5rem;
+  max-width: calc(100% - 2rem);
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.l_curso {
+  text-align: center;
+  color: white;
+}
+
+.btn_voltar {
+  margin: 1rem auto;
+}
